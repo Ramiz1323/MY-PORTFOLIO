@@ -97,6 +97,7 @@ section{
 }
 h3 span{
   color: var(--main-color);
+    font-size: 3rem;
 }
 .home-sci{
   /* border: 2px solid red; */
