@@ -355,7 +355,7 @@ h3 span{
   width: 600px;
   height: 80%;
   padding: 75px 90px;
-  margin-left: 75px;
+  /* margin-left: 75px; */
 }
 
 .heading1 {
@@ -733,8 +733,15 @@ h3 span{
 }
 
 @media (max-width:768px) {
+  .header{
+    justify-content: flex-start;
+    gap: 33rem;
+  }
   #menu-icon{
     display: block;
+  }
+  .container1{
+    margin-left: 75px
   }
   .navbar{
     position: absolute;
@@ -764,6 +771,9 @@ h3 span{
   .home-content h1{
     font-size: 5rem;
   }
+  .home-content {
+    padding-left: 50px;
+  }
   .home-img img{
     width: 70vw;
     margin-bottom: 20rem;
@@ -781,7 +791,7 @@ h3 span{
     width: 70vw;
   }
   .Technical-bars{
-    margin: 0px -37px 0px -95px;
+    margin: 20px -37px 0px -95px;
   }
   .heading1{
     font-size: 2.4rem;
