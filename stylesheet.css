@@ -266,6 +266,24 @@ h3 span{
   height: 100vh;
   width: 100%;
 }
+.about-content  p  span{
+  font-weight: bold;
+  color: #00ff9d;
+}
+.about-content p:first-letter {
+  font-size: 1.8em; 
+  font-weight: bold; 
+  color: #e0e0e0; 
+}
+.about-content p em{
+  background-color: #565f70;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.about-content p em:hover{
+  background-color: #6d7688;
+  transition: background-color 0.3s;
+}
 .about-img img{
   width: 35vw;
 }
@@ -571,7 +589,7 @@ h3 span{
   grid-template-columns: repeat(3,1fr);
   align-items: center;
   gap: 2.5rem;
-  padding: 75px 8%;
+  padding-top: 75px;
 }
 .portfolio-container .portfolio-box{
    position: relative;
@@ -612,6 +630,12 @@ h3 span{
 .portfolio-layer p{
   font-size: 1.6rem;
   margin: 0.3rem 0 1rem;
+  color: rgb(255, 255, 255);
+  text-shadow:
+    1px 1px 0 black,  /* Shadow to the right */
+    -1px 1px 0 black, /* Shadow to the left */
+    1px -1px 0 black, /* Shadow below */
+    -1px -1px 0 black; /* Shadow above */
 }
 .portfolio-layer a{
   display: inline-flex;
