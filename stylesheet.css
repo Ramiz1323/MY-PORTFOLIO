@@ -956,6 +956,9 @@ h3 span{
   .about-img{
     width: 70vw;
   }
+  .about-img img{
+    width: 65vw;
+  }
   .Technical-bars{
     margin: 20px -37px 0px -95px;
   }
