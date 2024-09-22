@@ -113,7 +113,7 @@
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
             <!-- <h3>Frontend Developer</h3> -->
-            <p id="about-p">
+            <p class="about-p">
                 <p>Hello, I'm <span>Sk Ramiz Raza</span>, a dedicated student and aspiring professional with a strong foundation in both
                     science and technology. I completed my 10th and 12th grades from <span>Mitra Institution Bhowanipur Branch</span>,
                     securing 83% and 87% respectively, with a focus on pure science. My academic journey reflects a deep
@@ -127,7 +127,68 @@
                 <p>I am driven by a curiosity for how things work and a desire to build solutions that can make a difference. I am continuously learning and evolving, committed to developing a versatile skill set that spans both the physical and digital worlds.
                 </p>
             </p>
-            <a href="#" class="btn-n">Certificates</a>
+            <button onclick="openPopup()" class="btn-n">Certificates</button>
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <button class="close-btn" onclick="closePopup()">Close</button>
+                    <div class="carousel-container">
+                        <button class="left-arrow" onclick="scrollCarousel(-1)">&#9664;</button>
+        
+                        <div class="carousel-wrapper" id="carousel">
+                            <div class="card">
+                                <div class="card-details">
+                                    <img src="C.png" alt="" height="200">
+                                </div>
+                                <a href="c.pdf" download="C.pdf">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-details">
+                                    <img src="C++.png" alt="" height="200">
+                                </div>
+                                <a href="c++.pdf" download="C++.pdf">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-details">
+                                    <img src="C Quiz.png" alt="" height="200">
+                                </div>
+                                <a href="Certificate for Sk Ramiz Raza for _Online Quiz on _Data Struct..._.pdf" download="C Quiz.pdf">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-details">
+                                    <img src="C Training.png" alt="" height="200">
+                                </div>
+                                <a href="SK-RAMIZ-RAZA-Participant-Certificate.pdf" download="C Training.pdf">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-details">
+                                    <img src="Cyber Security.png" alt="" height="200">
+                                </div>
+                                <a href="Sk_Raza_3386318.pdf" download="Cyber Security.pdf">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                            <div class="card">
+                                <div class="card-details">
+                                    <p>Adding...</p>
+                                </div>
+                                <a href="" download="">
+                                    <button class="card-button">Download</button>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <button class="right-arrow" onclick="scrollCarousel(1)">&#9654;</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <!-- SKILLS SECTION  -->
