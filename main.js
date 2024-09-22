@@ -75,3 +75,32 @@ const typed = new  Typed('.multiple-text',{
     backDelay: 1000,
     loop: true
 });
+
+
+//about button
+let currentScrollPosition = 0;
+        const scrollAmount = 150;
+        const totalCards = document.querySelectorAll('.card').length;
+        const carouselWidth = document.querySelector('.carousel-wrapper').offsetWidth;
+        const maxScrollPosition = scrollAmount * (totalCards - Math.floor(carouselWidth / scrollAmount));
+
+        function scrollCarousel(direction) {
+            const carousel = document.getElementById("carousel");
+            currentScrollPosition += direction * scrollAmount;
+
+            if (currentScrollPosition >= maxScrollPosition + scrollAmount) {
+                currentScrollPosition = 0;
+            } else if (currentScrollPosition < 0) {
+                currentScrollPosition = maxScrollPosition;
+            }
+
+            carousel.style.transform = `translateX(-${currentScrollPosition}px)`;
+        }
+
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
